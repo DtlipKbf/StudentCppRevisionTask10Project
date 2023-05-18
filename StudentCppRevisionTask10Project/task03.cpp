@@ -26,6 +26,13 @@
 */
 
 int task03(long long n) {
+	if (n < 0) n *= -1;
+
+	int max = n % 10;
+	while (n > 0) {
+		max = (n % 10 > max) ? n % 10 : max;
+		n /= 10;
+	}
 
 	return -1;
 }
