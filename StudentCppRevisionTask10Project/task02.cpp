@@ -28,7 +28,21 @@
 */
 
 int task02(long long n) {
+	if (n == 0) return 1;
 	int count = 0;
+	if (n < 0) n *= -1;
+	long long copy = n;
 
+	int min = n % 10;
+	while (n > 0) {
+		min = (n % 10 < min) ? n % 10 : min;
+		n /= 10;
+	}
+
+	while (copy > 0) {
+		if (min == copy % 10) count++;
+		copy /= 10;
+	}
+	
 	return count;
 }
