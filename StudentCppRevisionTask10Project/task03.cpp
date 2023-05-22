@@ -26,13 +26,34 @@
 */
 
 int task03(long long n) {
+	cout << n << endl;
 	if (n < 0) n *= -1;
+	long long copy = n;
+	
+	if (n == 0) return -1;
 
 	int max = n % 10;
 	while (n > 0) {
 		max = (n % 10 > max) ? n % 10 : max;
 		n /= 10;
 	}
+	n = copy;
+	int min = n % 10;
+	while (n > 0) {
+		min = (n % 10 < min) ? n % 10 : min;
+		n /= 10;
+	}
 
-	return -1;
+	if (min == max) return -1;
+
+	n = copy;
+	int max2 = (n % 10 != max) ? n % 10 : (n/=10) % 10;
+	while (n > 0) {
+		max2 = (n % 10 > max2 && n % 10 < max) ? n % 10 : max2;
+		n /= 10;
+	}
+
+	cout << max2 << endl;
+
+	return max2;
 }
