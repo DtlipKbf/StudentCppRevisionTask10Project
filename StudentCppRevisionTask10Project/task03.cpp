@@ -26,7 +26,6 @@
 */
 
 int task03(long long n) {
-	cout << n << endl;
 	if (n < 0) n *= -1;
 	long long copy = n;
 	
@@ -52,8 +51,6 @@ int task03(long long n) {
 		max2 = (n % 10 > max2 && n % 10 < max) ? n % 10 : max2;
 		n /= 10;
 	}
-
-	cout << max2 << endl;
 
 	return max2;
 }
