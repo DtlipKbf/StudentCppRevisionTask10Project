@@ -32,7 +32,26 @@
 */
 
 int task06(long long n) {
-	
+	cout << n << endl;
+	if (n < 0) n *= -1;
+	int size = 0;
+	int array[25];
+	int i = 0;
 
-	return 0;
+	while (n > 0) {
+		array[i] = n % 10;
+		i++;
+		size++;
+		n /= 10;
+	}
+
+	int count = 0;
+	for (int j = 1; j < size - 1; j++) {
+		if (array[j - 1] < array[j] && array[j] > array[j + 1]) {
+			count++;
+		}
+	}
+
+	cout << count << endl;
+	return count;
 }

@@ -46,7 +46,6 @@
 */
 
 int task05(long long n) {
-	cout << n << endl;
 	int count = 2;
 	long long a = 0;
 	if (n == 0)return 1;
@@ -60,7 +59,6 @@ int task05(long long n) {
 		b = sum;
 		count++;
 		if (b == n) {
-			cout << "//count" << count << endl;
 			return count;
 		}
 	}
