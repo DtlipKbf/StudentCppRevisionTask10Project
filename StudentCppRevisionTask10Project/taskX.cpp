@@ -30,7 +30,6 @@
 */
 
 int taskX(long long n) {
-	cout << n << endl;
 	if (n < 0)n *= -1;
 	int count = 1;
 
@@ -41,6 +40,6 @@ int taskX(long long n) {
 			count++;
 		}
 	}
-	cout << count << endl;
+	
 	return count;
 }

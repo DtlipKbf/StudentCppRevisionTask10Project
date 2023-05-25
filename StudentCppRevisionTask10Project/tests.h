@@ -195,11 +195,11 @@ void testingTask06() {
 void testingTaskX() {
 	bool result = taskX(123456) == 1
 		&& taskX(1234567789) == 2
-		&& taskX(1122233335) == 7//4
+		&& taskX(1122233335) == 4
 		&& taskX(0) == 1
 		&& taskX(-15) == 1
 		&& taskX(-1234567789) == 2
-		&& taskX(-1122233335) == 7//4
+		&& taskX(-1122233335) == 4
 		&& taskX(1111122223333) == 5
 		&& taskX(333344455551) == 4
 		&& taskX(-11111) == 5
