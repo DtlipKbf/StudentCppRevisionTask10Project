@@ -32,7 +32,6 @@
 */
 
 int task06(long long n) {
-	cout << n << endl;
 	if (n < 0) n *= -1;
 	int size = 0;
 	int array[25];
@@ -52,6 +51,5 @@ int task06(long long n) {
 		}
 	}
 
-	cout << count << endl;
 	return count;
 }

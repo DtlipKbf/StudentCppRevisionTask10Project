@@ -30,6 +30,17 @@
 */
 
 int taskX(long long n) {
+	cout << n << endl;
+	if (n < 0)n *= -1;
+	int count = 1;
 
-	return 0;
+	while (n > 0) {
+		int a = n % 10;
+		n /= 10;
+		if (a == n % 10) {
+			count++;
+		}
+	}
+	cout << count << endl;
+	return count;
 }
