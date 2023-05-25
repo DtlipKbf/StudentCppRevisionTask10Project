@@ -46,6 +46,24 @@
 */
 
 int task05(long long n) {
+	cout << n << endl;
+	int count = 2;
+	long long a = 0;
+	if (n == 0)return 1;
+	long long b = 1;
+	if (n == 1)return 2;
+	long long sum = 0;
+	
+	while (count < 100) {
+		sum = a + b;
+		a = b;
+		b = sum;
+		count++;
+		if (b == n) {
+			cout << "//count" << count << endl;
+			return count;
+		}
+	}
 
 	return -1;
 }

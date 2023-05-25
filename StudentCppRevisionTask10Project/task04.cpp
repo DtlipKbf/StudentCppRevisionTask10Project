@@ -39,7 +39,6 @@
 */
 
 long long task04(int n) {
-	cout << n << endl;
 	if(n <= 0) return -1;
 
 	long long a = 0;
@@ -51,6 +50,6 @@ long long task04(int n) {
 		b = sum;
 		n--;
 	}
-	cout << a << endl;
+	
 	return a;
 }

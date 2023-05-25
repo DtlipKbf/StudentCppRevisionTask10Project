@@ -32,6 +32,7 @@
 */
 
 int task06(long long n) {
+	
 
 	return 0;
 }
